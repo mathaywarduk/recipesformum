@@ -232,6 +232,7 @@ header.smaller h1 a:focus {
 
   .teasers--nextprev .teasers__item:last-child {
     text-align: right;
+    grid-column: 2 / 3;
   }
 
   dl {
