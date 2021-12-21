@@ -11,12 +11,20 @@
 body {
   font-size: 16px;
   font-family:  'Montserrat', sans-serif;
-  background-color: var(--goldenrod);
+  background-color: var(--chinese-red);
   color: var(--dark-sienna);
+  border: 1rem solid var(--chinese-red);
 }
 
 body * {
   box-sizing: border-box;
+}
+
+article {
+  max-width: 80rem;
+  margin:  0 auto;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
 }
 
 header, main, footer {
@@ -26,10 +34,11 @@ header, main, footer {
 
 header {
   text-align: center;
-  background-color:  var(--chinese-red);
+  background-color:  var(--dark-sienna);
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: white;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 main {
@@ -39,10 +48,11 @@ main {
 }
 
 footer {
-  background-color: var(--goldenrod);
+  background-color: var(--khaki-web);
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-align: center;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 h1, h2, h3 {
@@ -122,8 +132,8 @@ ol li:before {
 
 .section {
   padding: 2rem 0;
-  max-width: 50rem;
   margin: 0 auto;
+  max-width: 50rem;
 }
 
 dl {
@@ -147,8 +157,8 @@ dd {
 }
 
 .teasers__week {
-  background-color: var(--chinese-red);
-  color: var(--cultured);
+  background-color: var(--goldenrod);
+  color: black;
   display: inline-block;
   padding: 2px 4px;
   margin-bottom: 0.5rem;
