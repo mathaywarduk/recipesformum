@@ -162,13 +162,22 @@ dd {
 }
 
 .teasers__item a {
-  color: var(--dim-gray);
+  color: var(--dark-sienna);
   transition: all 250ms;
 }
 
 .teasers__item a:hover,
 .teasers__item a:focus {
   color: var(--chinese-red);
+}
+
+
+.teasers__item a.disabled,
+.teasers__item a.disabled:hover
+.teasers__item a.disabled:focus {
+  opacity: 0.5;
+  color: var(--dark-sienna);
+  cursor: not-allowed;
 }
 
 .teasers--nextprev {
@@ -207,6 +216,10 @@ header.smaller h1 a:focus {
     row-gap: 1rem;
     max-width: 80rem;
     margin:  0 auto;
+  }
+
+  .teasers__item {
+    padding: 2rem;
   }
 
   .teasers--nextprev {
