@@ -140,6 +140,19 @@ ol li:before {
   max-width: 50rem;
 }
 
+p a,
+li a {
+  color: var(--chinese-red);
+  transition: all 250ms;
+}
+
+p a:hover,
+p a:focus,
+li a:hover,
+li a:focus {
+  color: var(--dark-sienna);
+}
+
 dl {
 }
 
