@@ -1,6 +1,6 @@
 const day1 = new Date('2022-01-01');
-// const today = new Date();
-const today = new Date('2022-01-29');
+const today = new Date();
+// const today = new Date('2022-01-29');
 const thisDay = Math.floor((today.getTime() - day1.getTime()) / 86400000) + 1;
 const thisWeek = Math.ceil(thisDay / 7);
 console.log(thisWeek);
