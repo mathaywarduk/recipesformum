@@ -1,0 +1,27 @@
+p a,
+li a {
+  @apply
+    c-red
+    transition-all
+    duration-200
+    underline
+  ;
+}
+
+p a:hover,
+p a:focus,
+li a:hover,
+li a:focus {
+  @apply c-dark-sienna;
+}
+
+
+a.disabled,
+a.disabled:hover
+a.disabled:focus {
+  @apply
+    opacity-50
+    c-dark-sienna
+    cursor-not-allowed
+  ;
+}

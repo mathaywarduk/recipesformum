@@ -1,10 +1,10 @@
 /* TEAM */
 
-Your title: Mat Hayward
-Site: https://madebykind.com
-Instagram: @madebykind
+Development and Design: Mat Hayward
+Site: https://mathayward.com
+Instagram: @mathaywarduk
 Location: Nottingham, UK.
 
 /* SITE */
-Last update: 2021/12/21
+Last update: 2022/03/12
 Standards: HTML5, CSS3

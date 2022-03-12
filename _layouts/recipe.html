@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+<div class="max-w-3xl py-8 mx-auto">
+  <p>Week {{ page.week }}</p>
+  <h1>{{ page.title }}</h1>
+  <p class="lede">{{ page.description }}</p>
+
+  <dl>
+    <dt>Serves</dt>
+    <dd>{{ page.details.serves }}</dd>
+    <dt>Cooking time</dt>
+    <dd>{{ page.details.cooking-time }}</dd>
+  </dl>
+
+</div>
+
+<div class="max-w-3xl py-8 mx-auto">
+
+  <h2>Ingredients</h2>
+  <ul>
+    {% for item in page.ingredients %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="max-w-3xl py-8 mx-auto">
+  <h2>Method</h2>
+  <ol>
+    {% for item in page.method %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ol>
+</div>
+
+<div class="max-w-3xl py-8 mx-auto">
+  <h2>Nutritional info (per serving)</h2>
+  <dl>
+    <dt>Calories</dt>
+    <dd>{{ page.nutrition.calories }}</dd>
+    <dt>Fat</dt>
+    <dd>{{ page.nutrition.fat }}g</dd>
+    <dt>Carbohydrates</dt>
+    <dd>{{ page.nutrition.carbohydrates }}g</dd>
+    <dt>Protein</dt>
+    <dd>{{ page.nutrition.protein }}g</dd>
+  </dl>
+</div>
+
+<div class="border-t br-khaki pt-8 grid-cols-2 lg:grid lg:grid-cols-3 lg:gap-4 lg:max-w-7xl lg:mx-auto lg:grid-cols-2">
+
+
+  {% if page.week > 1 %}
+    {% assign prev_week = page.week | minus:1 %}
+    {% assign prev = site.recipes | where:"week", prev_week | first %}
+    <div class="py-4 border-b br-khaki lg:p-8 lg:border-none">
+      <p class="b-goldenrod c-black inline-block py-0.5 px-1 mb-2 text-sm">Last week</p>
+      <h2><a href="{{ prev.url }}" class="c-dark-sienna transition-all duration-200 hover:c-red focus:c-red underline">{{ prev.title }}</a></h2>
+    </div>
+  {% endif %}
+
+
+  {% if page.week < site.recipes.size  %}
+    {% assign next_week = page.week | plus:1 %}
+    {% assign next = site.recipes | where:"week", next_week | first %}
+
+    <div class="py-4 border-b br-khaki lg:p-8 lg:border-none lg:text-right">
+      <p class="b-goldenrod c-black inline-block py-0.5 px-1 mb-2 text-sm">Next week</p>
+      <h2><a href="javascript:void(0)" class="c-dark-sienna transition-all duration-200 hover:c-red focus:c-red disabled underline" data-link-week="{{ next.week }}">{{ next.title }}</a></h2>
+    </div>
+  {% endif %}
+</div>
