@@ -12,7 +12,7 @@ ingredients:
  - "1/2 tsp dried oregano"
  - "1/4 tsp garlic granules or 1/2 garlic clove, minced"
  - "Olive oil"
- - "1 packet <a href='https://www.sainsburys.co.uk/gol-ui/product/merchant-gourmet-red-rice-grains---quinoa-205g'>Merchant Gourmet Glorious Grains</a>"
+ - "1 packet <a href='https://www.sainsburys.co.uk/gol-ui/product/merchant-gourmet-red-rice-grains---quinoa-205g' target='_blank'>Merchant Gourmet Glorious Grains</a>"
  - "1 small beetroot, diced"
  - "1 courgette"
  - "Juice of 1 lemon"

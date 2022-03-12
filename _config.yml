@@ -8,6 +8,7 @@ collections:
     output: true
     permalink: /:collection/:title/index.html
     order:
+      - week-7.md
       - week-6.md
       - week-5.md
       - week-4.md
