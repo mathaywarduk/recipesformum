@@ -6,7 +6,7 @@ plugins:
 collections:
   recipes:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:title/index.html
     order:
       - week-6.md
       - week-5.md
