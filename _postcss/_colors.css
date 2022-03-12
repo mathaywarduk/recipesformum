@@ -1,0 +1,75 @@
+:root {
+  --goldenrod: #e6af2eff;
+  --cultured: #f4f2f3ff;
+  --dark-sienna: #230903ff;
+  --khaki: #beb7a4ff;
+  --red: #a5402dff;
+}
+
+.b-goldenrod {
+  background-color: var(--goldenrod);
+}
+
+.c-goldenrod {
+  color: var(--goldenrod);
+}
+
+.br-goldenrod {
+  border-color: var(--goldenrod);
+}
+
+.b-cultured {
+  background-color: var(--cultured);
+}
+
+.c-cultured {
+  color: var(--cultured);
+}
+
+.br-cultured {
+  border-color: var(--cultured);
+}
+
+.b-dark-sienna {
+  background-color: var(--dark-sienna);
+}
+
+.c-dark-sienna {
+  color: var(--dark-sienna);
+}
+
+.br-dark-sienna {
+  border-color: var(--dark-sienna);
+}
+
+.b-khaki {
+  background-color: var(--khaki);
+}
+
+.c-khaki {
+  color: var(--khaki);
+}
+
+.br-khaki {
+  border-color: var(--khaki);
+}
+
+.b-red {
+  background-color: var(--red);
+}
+
+.c-red {
+  color: var(--red);
+}
+
+.br-red {
+  border-color: var(--red);
+}
+
+.c-black {
+  color: black;
+}
+
+.c-white {
+  color: white;
+}
